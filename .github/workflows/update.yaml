@@ -1,0 +1,32 @@
+name: update-sources
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-sources:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.6
+
+      - uses: cachix/install-nix-action@V27
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+
+      - run: ./update.py
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: 'chore: update sources.json'
+          author: godot-overlay <florianvazelle@users.noreply.github.com>
+          signoff: false
+          branch: update-sources
+          delete-branch: true
+          title: 'chore: update sources.json'
