@@ -73,14 +73,16 @@ class BuildsData(msgspec.Struct):
 
 class GodotBuildsUpdater(msgspec.Struct):
     # The processed data for each version and system
-    sources: Dict[str, Dict[SystemStr, BuildsData]] = dict()
+    builds: Dict[str, Dict[SystemStr | Literal["export_templates"], BuildsData]] = (
+        dict()
+    )
 
     def save(self):
         """
         Saves the processed version data to a file as JSON.
         """
         with open("sources.json", "w") as f:
-            json.dump(msgspec.to_builtins(self.sources), f, indent=2, sort_keys=True)
+            json.dump(msgspec.to_builtins(self.builds), f, indent=2, sort_keys=True)
 
         print("Data has been processed and saved to 'sources.json'.")
 
@@ -101,7 +103,7 @@ for filename in tqdm.tqdm(os.listdir(godot_build_releases_path)):
     # Check if the file is a JSON file
     if not filename.endswith(".json"):
         continue
-    
+
     file_path = os.path.join(godot_build_releases_path, filename)
 
     # Open and parse the JSON file
@@ -113,7 +115,7 @@ for filename in tqdm.tqdm(os.listdir(godot_build_releases_path)):
     if "-" not in release_info.name:
         release_info.name += "-stable"
 
-    updater.sources[release_info.name] = {}
+    updater.builds[release_info.name] = {}
 
     # Loop through each file in the release
     for file in release_info.files:
@@ -121,13 +123,25 @@ for filename in tqdm.tqdm(os.listdir(godot_build_releases_path)):
         if "mono" in file.filename:
             continue
 
-        #  For each supported system, add relevant build data.
-        for system in file.systems:
-            updater.sources[release_info.name][system] = BuildsData(
+        elif "export_templates" in file.filename:
+            updater.builds[release_info.name]["export_templates"] = BuildsData(
                 url=f"https://github.com/godotengine/godot-builds/releases/download/{release_info.name}/{file.filename}",
                 version=release_info.name,
                 sha512=file.checksum,
             )
 
-# Save the processed data to 'sources.json'.
+        else:
+            #  For each supported system, add relevant build data.
+            for system in file.systems:
+                updater.builds[release_info.name][system] = BuildsData(
+                    url=f"https://github.com/godotengine/godot-builds/releases/download/{release_info.name}/{file.filename}",
+                    version=release_info.name,
+                    sha512=file.checksum,
+                )
+
+    # If no files have been saved, drop the version.
+    if not updater.builds[release_info.name]:
+        updater.builds.pop(release_info.name)
+
+# Save the processed data to 'builds.json'.
 updater.save()

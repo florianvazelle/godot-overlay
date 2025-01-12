@@ -4,17 +4,22 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
     flake-utils.url = "github:numtide/flake-utils";
+    treefmt-nix.url = "github:numtide/treefmt-nix";
+    treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
-    self,
     nixpkgs,
     flake-utils,
+    treefmt-nix,
     ...
   }: let
     systems = ["i686-linux" "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin"];
     outputs = flake-utils.lib.eachSystem systems (system: let
       pkgs = nixpkgs.legacyPackages.${system};
+
+      # Eval the treefmt modules from ./treefmt.nix
+      treefmtEval = treefmt-nix.lib.evalModule pkgs ./treefmt.nix;
     in rec {
       # The packages exported by the Flake:
       #  - default - latest released version
@@ -29,15 +34,18 @@
       };
 
       # nix fmt
-      formatter = pkgs.alejandra;
+      formatter = treefmtEval.config.build.wrapper;
     });
   in
     outputs
     // {
       # Overlay that can be imported so you can access the packages
-      # using godotpkgs.latest or whatever you'd like.
-      overlays.default = final: prev: {
-        godotpkgs = outputs.packages.${prev.system};
+      # using godotPkgs.latest or whatever you'd like.
+      overlays.default = _final: prev: {
+        godotPkgs = outputs.packages.${prev.system};
+        mkGodot = prev.callPackage ./lib/mkGodot.nix { };
+        mkNixosPatch = prev.callPackage ./lib/mkNixosPatch.nix { };
+        mkPlug = prev.callPackage ./lib/mkPlug.nix { };
       };
     };
 }
