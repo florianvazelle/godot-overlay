@@ -1,25 +1,21 @@
 # This modules patch a given Godot project derivation, to make it runnable on Nixos.
-{ lib
-, stdenv
-, mkGodot
-, copyDesktopItems
-, installShellFiles
-, autoPatchelfHook
-, xorg
-, vulkan-loader
-, libGL
-, libxkbcommon
-, alsa-lib
+{
+  stdenv,
+  copyDesktopItems,
+  installShellFiles,
+  autoPatchelfHook,
+  xorg,
+  vulkan-loader,
+  libGL,
+  libxkbcommon,
+  alsa-lib,
+}: {
+  pname,
+  version,
+  src,
 }:
-
-{ pname
-, version
-, src
-, desktopItems ? [ ]
-}:
-
 stdenv.mkDerivation rec {
-  inherit pname version src desktopItems;
+  inherit pname version src;
 
   nativeBuildInputs = [
     autoPatchelfHook
