@@ -5,27 +5,70 @@
   inherit (pkgs) lib;
   sources = builtins.fromJSON (lib.strings.fileContents ./sources.json);
 
-  # mkBinaryInstall makes a derivation that installs Godot from a binary.
-  mkBinaryInstall = {
-    url,
+  # mkExportTemplates makes a derivation that installs pre-compiled Godot Export Templates.
+  mkExportTemplates = {
     version,
+    url,
     sha512,
   }:
     pkgs.stdenv.mkDerivation {
       inherit version;
 
-      pname = "godot";
+      pname = "godot-export-templates";
       src = pkgs.fetchurl {inherit url sha512;};
-      dontConfigure = true;
-      dontBuild = true;
-      dontFixup = true;
+
+      strictDeps = true;
       nativeBuildInputs = [pkgs.unzip];
+
+      unpackPhase = ''
+        unzip $src -d $out
+
+        interpreter=$(cat $NIX_CC/nix-support/dynamic-linker)
+        patchelf --set-interpreter $interpreter $out/templates/linux_*
+      '';
+
+      meta = {
+        homepage = "https://godotengine.org";
+        description = "Free and Open Source 2D and 3D game engine";
+        license = lib.licenses.mit;
+        platforms = lib.platforms.all;
+        maintainers = [lib.maintainers.florianvazelle];
+      };
+    };
+
+  # Godot Export Templates packages that are tagged releases
+  exportTemplatesPackages =
+    lib.attrsets.mapAttrs
+    (_k: v: mkExportTemplates {inherit (v.export_templates) version url sha512;})
+    (
+      lib.attrsets.filterAttrs
+      (_k: v: (builtins.hasAttr system v) && (v.${system}.url != null) && (v.${system}.sha512 != null))
+      sources
+    );
+
+  # mkEditor makes a derivation that installs pre-compiled Godot Editor.
+  mkEditor = {
+    version,
+    url,
+    sha512,
+  }: let
+    drv = pkgs.stdenv.mkDerivation {
+      inherit version;
+
+      pname = "godot-editor";
+      src = pkgs.fetchurl {inherit url sha512;};
+
+      strictDeps = true;
+      nativeBuildInputs = [pkgs.unzip];
+
       unpackPhase = ''
         unzip $src -d $out
       '';
+
       installPhase = ''
         mkdir -p $out/bin
         cp $out/Godot_v${version}* $out/bin/godot
+        rm $out/Godot_v${version}*
       '';
 
       meta = {
@@ -36,24 +79,40 @@
         maintainers = [lib.maintainers.florianvazelle];
       };
     };
+  in
+    pkgs.buildFHSUserEnv {
+      name = "godot";
+      inherit version;
+      targetPkgs = _pkgs: [drv];
+      runScript = "godot";
+    };
 
-  # The packages that are tagged releases
-  taggedPackages =
+  # Godot Editor packages that are tagged releases
+  editorPackages =
     lib.attrsets.mapAttrs
-    (k: v: mkBinaryInstall {inherit (v.${system}) version url sha512;})
+    (_k: v: let
+      editor = mkEditor {inherit (v.${system}) version url sha512;};
+    in
+      editor
+      // {
+        "mkGodot" = pkgs.callPackage ./lib/mkGodot.nix {
+          godot = editor;
+          exportTemplates = "${exportTemplatesPackages.${v.${system}.version}}/templates";
+        };
+      })
     (
       lib.attrsets.filterAttrs
-      (k: v: (builtins.hasAttr system v) && (v.${system}.url != null) && (v.${system}.sha512 != null))
+      (_k: v: (builtins.hasAttr system v) && (v.${system}.url != null) && (v.${system}.sha512 != null))
       sources
     );
 
-  # This determines the latest released version.
+  # This determines the latest Godot Editor released version.
   latest = lib.lists.last (
     builtins.sort
     (x: y: (builtins.compareVersions x y) < 0)
-    (builtins.attrNames taggedPackages)
+    (builtins.attrNames editorPackages)
   );
 in
-  # We want the packages but also add a "default" that just points to the
-  # latest released version.
-  taggedPackages // {"default" = taggedPackages.${latest};}
+  # We want packages but also add a "default" that just points to the
+  # latest Godot Editor released version.
+  editorPackages // { "default" = editorPackages.${latest}; }
