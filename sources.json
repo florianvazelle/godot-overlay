@@ -5256,6 +5256,38 @@
       "version": "4.4-beta2"
     }
   },
+  "4.4-beta3": {
+    "aarch64-darwin": {
+      "sha512": "e9fec55af8a7ed151bce1fc2df978072e0e5fb93b876545d88b9dd94f217692affea76f89e29901d816171a18ed818c8724ed69adc21f3d1ed299388412c1c73",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4-beta3/Godot_v4.4-beta3_macos.universal.zip",
+      "version": "4.4-beta3"
+    },
+    "aarch64-linux": {
+      "sha512": "e2484755b9f1591ce42f7ed521619094c907c555306314c04a7f514a5fdf01288c67d71ee8a4bd59e8976bba1f898faee58ad74a9637151cff1d409b09b5fc29",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4-beta3/Godot_v4.4-beta3_linux.arm64.zip",
+      "version": "4.4-beta3"
+    },
+    "export_templates": {
+      "sha512": "502a3fc6734664238cd917697d3717d28fb3a284e8197109eaaf04a166ace19b779cc2d8d7465bb51d058eb46c53542eadb061773977ae86c3a1b0ad777aaa9b",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4-beta3/Godot_v4.4-beta3_export_templates.tpz",
+      "version": "4.4-beta3"
+    },
+    "i686-linux": {
+      "sha512": "2a7f65d32dc757643f70378290f574c3180f945a3ca81ce866981eba9b5dc8aa9d06f74b68958a57c3edf3ee4205fdd9456d75a925179d1a55ffe11f537530b2",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4-beta3/Godot_v4.4-beta3_linux.x86_32.zip",
+      "version": "4.4-beta3"
+    },
+    "x86_64-darwin": {
+      "sha512": "e9fec55af8a7ed151bce1fc2df978072e0e5fb93b876545d88b9dd94f217692affea76f89e29901d816171a18ed818c8724ed69adc21f3d1ed299388412c1c73",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4-beta3/Godot_v4.4-beta3_macos.universal.zip",
+      "version": "4.4-beta3"
+    },
+    "x86_64-linux": {
+      "sha512": "9d300506f484591271e2225435b14c8fb8d093ebc1e7d0f8bd223a1a1404c985a0a0e85b0fc5e6187b33a6ecca6211195befe54af62776721885ff3fb36432d4",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4-beta3/Godot_v4.4-beta3_linux.x86_64.zip",
+      "version": "4.4-beta3"
+    }
+  },
   "4.4-dev1": {
     "aarch64-darwin": {
       "sha512": "322ce4fd5904e152217a96ed078449dce3e0a6053dc863f831bee2ff74881f5bdda314cb41efc38f0eda6a14a4823125d5cfc0b2ab6ba4779075d1911de62bf0",
