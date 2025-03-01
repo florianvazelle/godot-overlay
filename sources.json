@@ -5607,5 +5607,37 @@
       "url": "https://github.com/godotengine/godot-builds/releases/download/4.4-rc2/Godot_v4.4-rc2_linux.x86_64.zip",
       "version": "4.4-rc2"
     }
+  },
+  "4.4-rc3": {
+    "aarch64-darwin": {
+      "sha512": "3412eb9e8889588e4f644c9f28fc883125ac1a56c43591fea346fad8c67fb641be8eda55c7fd1bd7b0f411e5a1cbf583cd64d164f26ed3118710e02f5bf73ac7",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4-rc3/Godot_v4.4-rc3_macos.universal.zip",
+      "version": "4.4-rc3"
+    },
+    "aarch64-linux": {
+      "sha512": "c3f02b283bc16ade0cd2ef7e99ef903b86d56cd182f399c9f4811bda2d40b4ef7b4231e2fdf3652a5c21bcbd3ffa29a058c7f1bf9144dfffd527cc7ba5552a69",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4-rc3/Godot_v4.4-rc3_linux.arm64.zip",
+      "version": "4.4-rc3"
+    },
+    "export_templates": {
+      "sha512": "b8b9095db563c503969b98f505f3b734f024f406542522fd18c5d1034e74724e19b9ce716d81027bf5bf9bb883f01fa1c66717aebaf9f9545cc03772b148ec17",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4-rc3/Godot_v4.4-rc3_export_templates.tpz",
+      "version": "4.4-rc3"
+    },
+    "i686-linux": {
+      "sha512": "34aac3b9146e0e997f076d61818c6487e6ba88124b2816abc9e3bb4e584aac96b59b01bebc7de264d4e821c7728fa5f572ed1a1faeb1d760bcab5503f91b1b75",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4-rc3/Godot_v4.4-rc3_linux.x86_32.zip",
+      "version": "4.4-rc3"
+    },
+    "x86_64-darwin": {
+      "sha512": "3412eb9e8889588e4f644c9f28fc883125ac1a56c43591fea346fad8c67fb641be8eda55c7fd1bd7b0f411e5a1cbf583cd64d164f26ed3118710e02f5bf73ac7",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4-rc3/Godot_v4.4-rc3_macos.universal.zip",
+      "version": "4.4-rc3"
+    },
+    "x86_64-linux": {
+      "sha512": "348d16e08347be002063a77b00520cabc7574381fd3592826e6b22754a9e533e04532d57d288ee11b88e05ce0693f8c534d0d0964595c5147f0c1b3975752069",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4-rc3/Godot_v4.4-rc3_linux.x86_64.zip",
+      "version": "4.4-rc3"
+    }
   }
 }
