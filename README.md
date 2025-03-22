@@ -11,6 +11,8 @@ The flake outputs are documented in `flake.nix` but an overview:
 
   * Default package and "app" is the latest released version
   * `packages.<version>` for a tagged release
+  * `packages.default` for the latest stable release
+  * `packages.latest` for the latest release
   * `overlays.default` is an overlay that adds `godotpkgs` to be the packages
     exposed by this flake
 
@@ -33,6 +35,10 @@ In your `flake.nix` file:
 In a shell:
 
 ```sh
-# run the latest released version
+# run the latest stable released version
 $ nix run 'github:florianvazelle/godot-overlay'
+# open a shell with any version (rc for example)
+$ nix shell 'github:florianvazelle/godot-overlay#4_4_1_rc1'
+# open a shell with latest version
+$ nix shell 'github:florianvazelle/godot-overlay#latest'
 ```

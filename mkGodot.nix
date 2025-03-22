@@ -14,7 +14,6 @@
   addons ? [],
   preBuildPhase ? "",
   preInstallPhase ? "",
-
 }: let
   addonsEnv = buildEnv {
     name = "addons";

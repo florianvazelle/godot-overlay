@@ -29,8 +29,8 @@
       # "Apps" so that `nix run` works. If you run `nix run .` then
       # this will use the latest default.
       apps = rec {
-        default = apps.godot;
-        godot = flake-utils.lib.mkApp {drv = packages.default;};
+        default = flake-utils.lib.mkApp {drv = packages.default;};
+        latest = flake-utils.lib.mkApp {drv = packages.latest;};
       };
 
       # nix fmt
@@ -40,11 +40,10 @@
     outputs
     // {
       # Overlay that can be imported so you can access the packages
-      # using godotPkgs.latest or whatever you'd like.
+      # using godotpkgs.latest or whatever you'd like.
       overlays.default = _final: prev: {
         godotpkgs = outputs.packages.${prev.system};
-        mkNixosPatch = prev.callPackage ./lib/mkNixosPatch.nix {};
-        mkPlug = prev.callPackage ./lib/mkPlug.nix {};
+        mkNixosPatch = prev.callPackage ./mkNixosPatch.nix {};
       };
     };
 }

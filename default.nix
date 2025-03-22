@@ -5,6 +5,9 @@
   inherit (pkgs) lib;
   sources = builtins.fromJSON (lib.strings.fileContents ./sources.json);
 
+  # Function to convert version strings like "4.0-stable" to "4_0_stable"
+  convertVersion = version: builtins.replaceStrings ["." "-"] ["_" "_"] version;
+
   # mkExportTemplates makes a derivation that installs pre-compiled Godot Export Templates.
   mkExportTemplates = {
     version,
@@ -95,7 +98,7 @@
     in
       editor
       // {
-        "mkGodot" = pkgs.callPackage ./lib/mkGodot.nix {
+        "mkGodot" = pkgs.callPackage ./mkGodot.nix {
           godot = editor;
           exportTemplates = "${exportTemplatesPackages.${v.${system}.version}}/templates";
         };
@@ -112,7 +115,22 @@
     (x: y: (builtins.compareVersions x y) < 0)
     (builtins.attrNames editorPackages)
   );
+
+  # This determines the latest stable Godot Editor released version.
+  default = lib.lists.last (
+    builtins.sort
+    (x: y: (builtins.compareVersions x y) < 0)
+    (builtins.filter (v: lib.strings.hasSuffix "stable" v)
+      (builtins.attrNames editorPackages))
+  );
+
+  # Rename each keys to a format supported by nix
+  packages = builtins.listToAttrs (map (pkg: lib.attrsets.nameValuePair (convertVersion pkg.version) pkg) (builtins.attrValues editorPackages));
 in
   # We want packages but also add a "default" that just points to the
   # latest Godot Editor released version.
-  editorPackages // { "default" = editorPackages.${latest}; }
+  packages
+  // {
+    "latest" = editorPackages.${latest};
+    "default" = editorPackages.${default};
+  }
