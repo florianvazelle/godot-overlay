@@ -40,11 +40,10 @@
     outputs
     // {
       # Overlay that can be imported so you can access the packages
-      # using godotPkgs.latest or whatever you'd like.
+      # using godotpkgs.latest or whatever you'd like.
       overlays.default = _final: prev: {
         godotpkgs = outputs.packages.${prev.system};
-        mkNixosPatch = prev.callPackage ./lib/mkNixosPatch.nix {};
-        mkPlug = prev.callPackage ./lib/mkPlug.nix {};
+        mkNixosPatch = prev.callPackage ./mkNixosPatch.nix {};
       };
     };
 }

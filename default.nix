@@ -95,7 +95,7 @@
     in
       editor
       // {
-        "mkGodot" = pkgs.callPackage ./lib/mkGodot.nix {
+        "mkGodot" = pkgs.callPackage ./mkGodot.nix {
           godot = editor;
           exportTemplates = "${exportTemplatesPackages.${v.${system}.version}}/templates";
         };
