@@ -5736,6 +5736,38 @@
       "version": "4.4.1-rc2"
     }
   },
+  "4.4.1-stable": {
+    "aarch64-darwin": {
+      "sha512": "e72933ed15db495a29c918b27adc83596b6a4dc59ec72c927e1591333df14f0eb57c515a94f9f5a0ed8a13053d55f6aedf56f2a2d828add2ef3f79c698db714b",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4.1-stable/Godot_v4.4.1-stable_macos.universal.zip",
+      "version": "4.4.1-stable"
+    },
+    "aarch64-linux": {
+      "sha512": "8af79fe5fbc4cc42f5a7e4a52bd124973e084218f4d299cb5400595c6083ca800a59770c9c289b622dfc164fc3c6f369b362134ea2ac44223361657ea7941b09",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4.1-stable/Godot_v4.4.1-stable_linux.arm64.zip",
+      "version": "4.4.1-stable"
+    },
+    "export_templates": {
+      "sha512": "8f461c7d6e91a0fbabfc95b1e4ca70ff1732c6f2920956a16b086ec2a85b5f7e238baf4dbce60dcc5630fae3bcb9a1fa2ae2027b92cb495c02d082705715e441",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4.1-stable/Godot_v4.4.1-stable_export_templates.tpz",
+      "version": "4.4.1-stable"
+    },
+    "i686-linux": {
+      "sha512": "89751f32b4d1fbcb459f58a644ad13f77184ba9990d5e72a9ba4ee604e82a0d4371025b6dca6b0124a0b9a75d2ff18b9a01d580f8f5727f821c129349a84b6e3",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4.1-stable/Godot_v4.4.1-stable_linux.x86_32.zip",
+      "version": "4.4.1-stable"
+    },
+    "x86_64-darwin": {
+      "sha512": "e72933ed15db495a29c918b27adc83596b6a4dc59ec72c927e1591333df14f0eb57c515a94f9f5a0ed8a13053d55f6aedf56f2a2d828add2ef3f79c698db714b",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4.1-stable/Godot_v4.4.1-stable_macos.universal.zip",
+      "version": "4.4.1-stable"
+    },
+    "x86_64-linux": {
+      "sha512": "ef4e76880a514257175544952c61191106fdef3095b909bafed9fcbeb230c3e5533920a0f3012882dd4bbde83028a67549825794e2d2c3cf76eba7918b71370e",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.4.1-stable/Godot_v4.4.1-stable_linux.x86_64.zip",
+      "version": "4.4.1-stable"
+    }
+  },
   "4.5-dev1": {
     "aarch64-darwin": {
       "sha512": "0dc61efa7bc487c4a651e240d40252bcd91eab9d9a58f408f5c4d82af8cc3a9305fd0373b68fbd130fa764b6567e3ee8bba329b5564b12889c6050f10a8ab96c",
