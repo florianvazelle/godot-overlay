@@ -2382,6 +2382,70 @@
       "version": "3.6.1-stable"
     }
   },
+  "3.6.2-stable": {
+    "aarch64-darwin": {
+      "sha512": "a3b19054ee5d8ed84ca4fdb00c33ee4c5797381d57f8408cdb6f4d62195d3c2e0297dfd88e7262778e06efef28503db60de33c70c521e343a3b08d35ae1c54b3",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/3.6.2-stable/Godot_v3.6.2-stable_osx.universal.zip",
+      "version": "3.6.2-stable"
+    },
+    "aarch64-linux": {
+      "sha512": "5c1bdeeb3b0fd024604e14046179b34b31b3629ae77f97f4fcad634c5aad2ce93366410238b1f571d21c6973fc19744e0babc36bf10c70492934e7928f819c18",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/3.6.2-stable/Godot_v3.6.2-stable_linux.arm64.zip",
+      "version": "3.6.2-stable"
+    },
+    "export_templates": {
+      "sha512": "bb8bf86cd319262597f56c4f596adceae39f17981cfee2b3a01c40eb951b621e999a5fab5ac218decab4f6a887fc636e772cb92b62bcd051d21678476b0eb2a5",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/3.6.2-stable/Godot_v3.6.2-stable_export_templates.tpz",
+      "version": "3.6.2-stable"
+    },
+    "i686-linux": {
+      "sha512": "b91e67b688fd819925dc3d678e2ec932bef589a2b0b5c548ba92c1befa506aab5a2435a53b149d86e4d8d48968f202d8d001bc31265e3a7e523f0c34827836f7",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/3.6.2-stable/Godot_v3.6.2-stable_x11.32.zip",
+      "version": "3.6.2-stable"
+    },
+    "x86_64-darwin": {
+      "sha512": "a3b19054ee5d8ed84ca4fdb00c33ee4c5797381d57f8408cdb6f4d62195d3c2e0297dfd88e7262778e06efef28503db60de33c70c521e343a3b08d35ae1c54b3",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/3.6.2-stable/Godot_v3.6.2-stable_osx.universal.zip",
+      "version": "3.6.2-stable"
+    },
+    "x86_64-linux": {
+      "sha512": "b131d94494ecc2c61ba1b266b17fc1f40e0707c5d38ce88fe017b67298caf7cb0cc87210dcd44c5c36b17fad45b8587285d4d9c74d985179b1b1041ea00d4022",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/3.6.2-stable/Godot_v3.6.2-stable_x11.64.zip",
+      "version": "3.6.2-stable"
+    }
+  },
+  "3.7-dev1": {
+    "aarch64-darwin": {
+      "sha512": "a5af2b0ee156d51a259dfcd25d10c0dcd51a285bd0570425fa29ddd0961b95ebcbdf724bdd3d12922497e78143b6c5be51e1ab5f5e16510ba06c65f68033cca6",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/3.7-dev1/Godot_v3.7-dev1_osx.universal.zip",
+      "version": "3.7-dev1"
+    },
+    "aarch64-linux": {
+      "sha512": "3445cda5659579e1263579182449efaabc9fef68424777dfea488d2ce81b6026b758357b25599567493fdb69fecbdaab8447ccdfdfc2a9edcb023fe89fa44cc2",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/3.7-dev1/Godot_v3.7-dev1_linux.arm64.zip",
+      "version": "3.7-dev1"
+    },
+    "export_templates": {
+      "sha512": "961e5e96b6c42e3bea14d4a99d7029a15564a46352a44bde285b02b6d202b85cade877dc6c3ecdf31a83fb61893d1ebe3e2fbee1aa3acbc33378563b17180ef4",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/3.7-dev1/Godot_v3.7-dev1_export_templates.tpz",
+      "version": "3.7-dev1"
+    },
+    "i686-linux": {
+      "sha512": "f5134a481f5160c5d59d3150522ff7bc0381076c76d34a8f435c7ce0722e1ea2216cd8f277a8d952509e9efd7b73478d356978328d1fbeecc5763878edb3a6fb",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/3.7-dev1/Godot_v3.7-dev1_x11.32.zip",
+      "version": "3.7-dev1"
+    },
+    "x86_64-darwin": {
+      "sha512": "a5af2b0ee156d51a259dfcd25d10c0dcd51a285bd0570425fa29ddd0961b95ebcbdf724bdd3d12922497e78143b6c5be51e1ab5f5e16510ba06c65f68033cca6",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/3.7-dev1/Godot_v3.7-dev1_osx.universal.zip",
+      "version": "3.7-dev1"
+    },
+    "x86_64-linux": {
+      "sha512": "d995c7f40d55bc7ce1192b4075429d978eac6f747518fc747d0c748d42a3cef671589663f74d87a46746db2b56ef49ec1baab8a9e79b2143af60a6e0d34eacfb",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/3.7-dev1/Godot_v3.7-dev1_x11.64.zip",
+      "version": "3.7-dev1"
+    }
+  },
   "4.0-alpha1": {
     "aarch64-darwin": {
       "sha512": "12ec1ce11470bd296faf0c7e4e127d125160d5774f48086ebde3fba359e7a36c58842055e7ab8c41e79e85ba9c8b90e87429a846d1e5e43503719b243a7898a3",
@@ -6406,6 +6470,38 @@
       "sha512": "204ed6ebc2db969af9ee44a953d58a631c34bfa017ea146f6b49ff44d521cc16c9710b02e51cfd2e371cff397adbe058fd895ca082ddf8e6ecd49ca7ffb85b86",
       "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev1/Godot_v4.6-dev1_linux.x86_64.zip",
       "version": "4.6-dev1"
+    }
+  },
+  "4.6-dev2": {
+    "aarch64-darwin": {
+      "sha512": "5a24004965fb6e2dbc40203d41f0299d67647aebc1f20fb43cde24ebc9998139e2af04a9feb5c49867c8ef67c78d745fe783e9e503110b89073aa27885a40500",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev2/Godot_v4.6-dev2_macos.universal.zip",
+      "version": "4.6-dev2"
+    },
+    "aarch64-linux": {
+      "sha512": "86033b11f0cb7d78069e565610a3495b70e46d34cc31d1fdfd0ea9ad60e2b0006f7ec5d4796f1961356882cc52b5953818b0a1284215b1a6f03f314f1d73c189",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev2/Godot_v4.6-dev2_linux.arm64.zip",
+      "version": "4.6-dev2"
+    },
+    "export_templates": {
+      "sha512": "6b34bd71719f998ca062bb213176c0f34c1f807f68ff49cef4e804a9905a88e17ef8b366eafca433b1b074e8f626f3d211d8e3eec4c5b3755423d39390a42fed",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev2/Godot_v4.6-dev2_export_templates.tpz",
+      "version": "4.6-dev2"
+    },
+    "i686-linux": {
+      "sha512": "2c3eae903b36fda0541c6bf1557b50e86de4fe19bc3bdc51ad0431a35c5225069ca82d9c55a29a7a4aae4c6ad50a3fd28111c9d19b26cc8765c1396eed9c5b59",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev2/Godot_v4.6-dev2_linux.x86_32.zip",
+      "version": "4.6-dev2"
+    },
+    "x86_64-darwin": {
+      "sha512": "5a24004965fb6e2dbc40203d41f0299d67647aebc1f20fb43cde24ebc9998139e2af04a9feb5c49867c8ef67c78d745fe783e9e503110b89073aa27885a40500",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev2/Godot_v4.6-dev2_macos.universal.zip",
+      "version": "4.6-dev2"
+    },
+    "x86_64-linux": {
+      "sha512": "06fe21013b74f2e86a0b4620f4114932fd0061943f58a0fb8766ca276dca2d5828c4eb766ad4aee245d3f1b4676912fd3bed34c2db97428f8f8064a44761f695",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev2/Godot_v4.6-dev2_linux.x86_64.zip",
+      "version": "4.6-dev2"
     }
   }
 }
