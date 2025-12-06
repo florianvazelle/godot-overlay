@@ -6599,5 +6599,37 @@
       "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev5/Godot_v4.6-dev5_linux.x86_64.zip",
       "version": "4.6-dev5"
     }
+  },
+  "4.6-dev6": {
+    "aarch64-darwin": {
+      "sha512": "f188fdf328ac75a0ee61e76c977a2863c453799a573611c52055907c88b89833eadd42f7e34ea65169b0d9ebc85b22123abec8accbb0e3ec2464c06de03a7d92",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev6/Godot_v4.6-dev6_macos.universal.zip",
+      "version": "4.6-dev6"
+    },
+    "aarch64-linux": {
+      "sha512": "ec75807ac152f59435dc5423b7f2d3adb856014ba52480ba1b0085718fe9bc328d921ef43a7be8f8a7dadbb44879cc649f64cc54a096b92fecbc77c69a82bf49",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev6/Godot_v4.6-dev6_linux.arm64.zip",
+      "version": "4.6-dev6"
+    },
+    "export_templates": {
+      "sha512": "a83f8727442c374d0f56b5cfecddd630daa4fe186356848bb1f4c073690fb5e3d85e22525b62154976c37a08f21cba3999bbba484245728b65afef25fc623a42",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev6/Godot_v4.6-dev6_export_templates.tpz",
+      "version": "4.6-dev6"
+    },
+    "i686-linux": {
+      "sha512": "35b856dc63996135f2ef90bd59020eadaae0464de06f6536a6ae28006d219113da3d679e630b38367ab37bb0b6890c6fa5e5926a7c08d172a5f1004d5b34c78e",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev6/Godot_v4.6-dev6_linux.x86_32.zip",
+      "version": "4.6-dev6"
+    },
+    "x86_64-darwin": {
+      "sha512": "f188fdf328ac75a0ee61e76c977a2863c453799a573611c52055907c88b89833eadd42f7e34ea65169b0d9ebc85b22123abec8accbb0e3ec2464c06de03a7d92",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev6/Godot_v4.6-dev6_macos.universal.zip",
+      "version": "4.6-dev6"
+    },
+    "x86_64-linux": {
+      "sha512": "ff4235c9ae73f566755d325e36823909b83454f5f52f2de4b2aeb18b0d050fdff7de5d64d27e6671cd53e7d6e689f8173bbf1bbb010eeb44c90a888f80aec797",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev6/Godot_v4.6-dev6_linux.x86_64.zip",
+      "version": "4.6-dev6"
+    }
   }
 }
