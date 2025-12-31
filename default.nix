@@ -83,7 +83,7 @@
       };
     };
   in
-    pkgs.buildFHSUserEnv {
+    pkgs.buildFHSEnv {
       name = "godot";
       inherit version;
       targetPkgs = _pkgs: [drv];
