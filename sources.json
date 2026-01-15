@@ -6727,5 +6727,37 @@
       "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-dev6/Godot_v4.6-dev6_linux.x86_64.zip",
       "version": "4.6-dev6"
     }
+  },
+  "4.6-rc1": {
+    "aarch64-darwin": {
+      "sha512": "d31771526e2e2ea9484633e29d95c9a3f7a7a52ab8ccac9be68de0826ee772a3ee0f6b8645d49fc4ce822c6dd862abbada05ebec8c8c06b2bc4c621b8b380235",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-rc1/Godot_v4.6-rc1_macos.universal.zip",
+      "version": "4.6-rc1"
+    },
+    "aarch64-linux": {
+      "sha512": "62f2f93dc38ce7ee67810e569c41fef100e4d94c2105ccc44dbaea74064d8b6b3f62afa7a63cda1b4aef063c540d36878ab982f308221942514a63bc7f75c298",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-rc1/Godot_v4.6-rc1_linux.arm64.zip",
+      "version": "4.6-rc1"
+    },
+    "export_templates": {
+      "sha512": "cf34f01b0ddcd8142a8b99ecebfe231321420e58125c0a786243cd727f3cf0e11b3cbbe785dd2d00c167690c95306d879fd9f468e222a976a8ea18d396cf3441",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-rc1/Godot_v4.6-rc1_export_templates.tpz",
+      "version": "4.6-rc1"
+    },
+    "i686-linux": {
+      "sha512": "6fd4ea1c1b853eb3b5551def3ba833a5a60d536b671726f73751434c0d1a09703f19c114238de8bcc9b0dec0c4b3e593fd7a2eb7f1afb379fc7aae4fa297e34d",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-rc1/Godot_v4.6-rc1_linux.x86_32.zip",
+      "version": "4.6-rc1"
+    },
+    "x86_64-darwin": {
+      "sha512": "d31771526e2e2ea9484633e29d95c9a3f7a7a52ab8ccac9be68de0826ee772a3ee0f6b8645d49fc4ce822c6dd862abbada05ebec8c8c06b2bc4c621b8b380235",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-rc1/Godot_v4.6-rc1_macos.universal.zip",
+      "version": "4.6-rc1"
+    },
+    "x86_64-linux": {
+      "sha512": "d96c8ae6ff1f0244871f1aa207f8f332b9eb7f46ad212a9c92bc63181303249e2bb1de0325fbd86bc2bc67fce6fe151190bfd447b9999e5b2c9f2f68e1aaa130",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6-rc1/Godot_v4.6-rc1_linux.x86_64.zip",
+      "version": "4.6-rc1"
+    }
   }
 }
