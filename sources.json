@@ -6984,6 +6984,38 @@
       "version": "4.6.2-rc1"
     }
   },
+  "4.6.2-rc2": {
+    "aarch64-darwin": {
+      "sha512": "1869d7dba54fe69ec932cfc248687747056f8b8cbd54ec3be60c804ca5c2643c63d99f01e93696db99cfaff3f2e273418109fa5559454af350cf77a5e0822036",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6.2-rc2/Godot_v4.6.2-rc2_macos.universal.zip",
+      "version": "4.6.2-rc2"
+    },
+    "aarch64-linux": {
+      "sha512": "508770bf679069fefd4147c8f7d67f461e32c15e4a28bff2de7210b426047a1520ec41ef4a36345d3693adecaf50c01239772bccba6a2e364c2c7939c8a3c95f",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6.2-rc2/Godot_v4.6.2-rc2_linux.arm64.zip",
+      "version": "4.6.2-rc2"
+    },
+    "export_templates": {
+      "sha512": "729839d3c8d884625ce9f8f50311bcf97c8ca1a99f76abae33c9151bec1209d89d85b05d8c3f62fde9536451c38b292b7243a1d623e10998233a449337da9b74",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6.2-rc2/Godot_v4.6.2-rc2_export_templates.tpz",
+      "version": "4.6.2-rc2"
+    },
+    "i686-linux": {
+      "sha512": "4f85fe0a44e0b71ae451e127d16db66ac6a414a30e5b6d257efece5ccf62a202fd54e12ed41730ee32e83349b01acbea6e6d12fd1c5ef6afca3b8425aa4c05e8",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6.2-rc2/Godot_v4.6.2-rc2_linux.x86_32.zip",
+      "version": "4.6.2-rc2"
+    },
+    "x86_64-darwin": {
+      "sha512": "1869d7dba54fe69ec932cfc248687747056f8b8cbd54ec3be60c804ca5c2643c63d99f01e93696db99cfaff3f2e273418109fa5559454af350cf77a5e0822036",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6.2-rc2/Godot_v4.6.2-rc2_macos.universal.zip",
+      "version": "4.6.2-rc2"
+    },
+    "x86_64-linux": {
+      "sha512": "3b563e04e278dfd502b8f39553cd5eda8a42ae3c44aa7366a85b1f0c02fc6c46bdb6f89e57390c1c7f1864357eeba5bb924ef4743cd94c6fff0188a8912585c6",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6.2-rc2/Godot_v4.6.2-rc2_linux.x86_64.zip",
+      "version": "4.6.2-rc2"
+    }
+  },
   "4.7-dev1": {
     "aarch64-darwin": {
       "sha512": "248c1b3f93369ec439deb5219ed4079be6caec86328f469b74d3f95ac6c8e52b14d925f22a6123cc0ba0ccf2b753f4a858d178c0326d3f02cabf9a198f7509d7",
