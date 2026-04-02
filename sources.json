@@ -7016,6 +7016,38 @@
       "version": "4.6.2-rc2"
     }
   },
+  "4.6.2-stable": {
+    "aarch64-darwin": {
+      "sha512": "a4ef421d7ff0d50a0cd8ff2cb935ae0757c769e3f5cc29af13d1c44317d4469b2c0b3bd922f43b8806688604b7fa4b68c8e7e0b559656b8db375917da55418b2",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6.2-stable/Godot_v4.6.2-stable_macos.universal.zip",
+      "version": "4.6.2-stable"
+    },
+    "aarch64-linux": {
+      "sha512": "47f6101e6df4f3022c752d465689fc2dcddf6ca99cf5d0e7c672f72b03a7412e4a2d9c6cbc38302f59b96870982d71ff8f249ee797c760640ba9e0aec9120147",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6.2-stable/Godot_v4.6.2-stable_linux.arm64.zip",
+      "version": "4.6.2-stable"
+    },
+    "export_templates": {
+      "sha512": "ce6a91e8d86df3183452c5e40d75fa0faf94268257b1d3dc1e4538caa277ca7c0fd3d113f8104a5515c3af84d49c5cefc77d7d1e7847ba422413d5466feb49fd",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6.2-stable/Godot_v4.6.2-stable_export_templates.tpz",
+      "version": "4.6.2-stable"
+    },
+    "i686-linux": {
+      "sha512": "e7e4a73c12d658388d235f78160d13248eb474efc47bbbbddbbfec02afb9577859141d4ecda89b3fe1b95ee5f11e0f53201d5d4e932e840e3cd4214a73c96e04",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6.2-stable/Godot_v4.6.2-stable_linux.x86_32.zip",
+      "version": "4.6.2-stable"
+    },
+    "x86_64-darwin": {
+      "sha512": "a4ef421d7ff0d50a0cd8ff2cb935ae0757c769e3f5cc29af13d1c44317d4469b2c0b3bd922f43b8806688604b7fa4b68c8e7e0b559656b8db375917da55418b2",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6.2-stable/Godot_v4.6.2-stable_macos.universal.zip",
+      "version": "4.6.2-stable"
+    },
+    "x86_64-linux": {
+      "sha512": "b6e4d5a716085e9649905be2afe77f723f97853544fb33392ce3d32594c730a95d9eb4d1042ed51508904c9e1d996bd36b7c7a2bf4f93f5b1885e98d81b792e7",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.6.2-stable/Godot_v4.6.2-stable_linux.x86_64.zip",
+      "version": "4.6.2-stable"
+    }
+  },
   "4.7-dev1": {
     "aarch64-darwin": {
       "sha512": "248c1b3f93369ec439deb5219ed4079be6caec86328f469b74d3f95ac6c8e52b14d925f22a6123cc0ba0ccf2b753f4a858d178c0326d3f02cabf9a198f7509d7",
