@@ -7559,5 +7559,37 @@
       "url": "https://github.com/godotengine/godot-builds/releases/download/4.7-rc3/Godot_v4.7-rc3_linux.x86_64.zip",
       "version": "4.7-rc3"
     }
+  },
+  "4.7-stable": {
+    "aarch64-darwin": {
+      "sha512": "0d5d635e6d78d4c2b1286586ca62af249609c2f70815b35437049f08476714d08b913faaf8c10f37313c932ee24c4f87a829899c84fa248f788fb612b8f79229",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.7-stable/Godot_v4.7-stable_macos.universal.zip",
+      "version": "4.7-stable"
+    },
+    "aarch64-linux": {
+      "sha512": "8ff111327573eb8a91bbf9d1915e467687788d766402b3cdd4bf3da5f1254fc35df18e5e0a406410f3fd8645b13a4b3cac7288ec36f3733b4b0f04dc71d9cd4a",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.7-stable/Godot_v4.7-stable_linux.arm64.zip",
+      "version": "4.7-stable"
+    },
+    "export_templates": {
+      "sha512": "1035dfde4edcc2472bb0c0b9610ce3ee9302642c2b9957e9066372f9f6bb759ab250c8887551a66f0bc5f51bbd9a58bb45e33a0f29844e97615a9b1138c1120e",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.7-stable/Godot_v4.7-stable_export_templates.tpz",
+      "version": "4.7-stable"
+    },
+    "i686-linux": {
+      "sha512": "8d4855d468973cc3bf1a27e9e8f8678c91de9ba55e2606df9700a73b8821940c5394b8c4d6b9af9cd18f09c21b3bca52278cf79d21f198f73c6b697cecd7e90a",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.7-stable/Godot_v4.7-stable_linux.x86_32.zip",
+      "version": "4.7-stable"
+    },
+    "x86_64-darwin": {
+      "sha512": "0d5d635e6d78d4c2b1286586ca62af249609c2f70815b35437049f08476714d08b913faaf8c10f37313c932ee24c4f87a829899c84fa248f788fb612b8f79229",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.7-stable/Godot_v4.7-stable_macos.universal.zip",
+      "version": "4.7-stable"
+    },
+    "x86_64-linux": {
+      "sha512": "b639ca9c1ddea39bb3df89bd5283a51ca6047467abe6b25e9436566f2b2082ede633025073989ecf39c7d5d3c2493d80ea13e3af6dd5e261bbf89e462d6d2214",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.7-stable/Godot_v4.7-stable_linux.x86_64.zip",
+      "version": "4.7-stable"
+    }
   }
 }
