@@ -7591,5 +7591,37 @@
       "url": "https://github.com/godotengine/godot-builds/releases/download/4.7-stable/Godot_v4.7-stable_linux.x86_64.zip",
       "version": "4.7-stable"
     }
+  },
+  "4.7.1-rc1": {
+    "aarch64-darwin": {
+      "sha512": "e8954e92e880a51be6348bed5e8bf36e3764c790357507bf0ab7916231563c3ecd427ef668401bec2b7e5315c0d5707fbc34b9798acef0b4bd1da35e00284378",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.7.1-rc1/Godot_v4.7.1-rc1_macos.universal.zip",
+      "version": "4.7.1-rc1"
+    },
+    "aarch64-linux": {
+      "sha512": "c8d0f7295cb57f379d1d9c25d3a5916c15c1fa7793d9cff7376f7d08ce67487bdf5f0cbf4018051cf098a642f419b64e70daa874f13dc1badb0462f15ebd5c9e",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.7.1-rc1/Godot_v4.7.1-rc1_linux.arm64.zip",
+      "version": "4.7.1-rc1"
+    },
+    "export_templates": {
+      "sha512": "ca3cd5ccb51cf20b2d5e33005147aa9289eae1e5e3de04920bcf88885582c5556574e91a17c0d10073b4b7c8b9110f724bdedb30cdbc96453e68f564a87fe566",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.7.1-rc1/Godot_v4.7.1-rc1_export_templates.tpz",
+      "version": "4.7.1-rc1"
+    },
+    "i686-linux": {
+      "sha512": "9f78418864734b0c0633ecb44c3bac8eb2c4177af303e3e8125ddc483e1a2fe66f24d3c8413bb84f35aa67ef4401aa188168c1825852115da081a3eca4a38a16",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.7.1-rc1/Godot_v4.7.1-rc1_linux.x86_32.zip",
+      "version": "4.7.1-rc1"
+    },
+    "x86_64-darwin": {
+      "sha512": "e8954e92e880a51be6348bed5e8bf36e3764c790357507bf0ab7916231563c3ecd427ef668401bec2b7e5315c0d5707fbc34b9798acef0b4bd1da35e00284378",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.7.1-rc1/Godot_v4.7.1-rc1_macos.universal.zip",
+      "version": "4.7.1-rc1"
+    },
+    "x86_64-linux": {
+      "sha512": "81f191b730bf2e68d80c2c829d9186ac6115b167dfda0a3d8bf94e0695083217f653968cf5d79ee4c65b04f869aac8ce4b7f08620f7b8745cf2df8c5df3dd14e",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.7.1-rc1/Godot_v4.7.1-rc1_linux.x86_64.zip",
+      "version": "4.7.1-rc1"
+    }
   }
 }
