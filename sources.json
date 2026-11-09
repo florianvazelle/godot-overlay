@@ -7828,6 +7828,28 @@
       "version": "4.8-beta2"
     }
   },
+  "4.8-beta3": {
+    "aarch64-linux": {
+      "sha512": "c8b5127ae32f7a52081a67f318742e5d5801c9412ca185cac109c3c7e156896a2e3c276dc1f03524ecbca947080487cde85d8a6911926caa19e84b9a1a4d311c",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.8-beta3/Godot_v4.8-beta3_linux.arm64.zip",
+      "version": "4.8-beta3"
+    },
+    "export_templates": {
+      "sha512": "541950a4a79a68c41109ebfc0278ee6d52396da340dd4702f113d528bd0038df3f8b339f04bf4af8072e837fbfe599556d67181ede1867de058ccd2272734505",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.8-beta3/Godot_v4.8-beta3_export_templates.tpz",
+      "version": "4.8-beta3"
+    },
+    "i686-linux": {
+      "sha512": "dc0278459d6a358057ac0bc97ba4c89f5ea67b353a849a6c634ac2f7a39ae0069ac1f2e9786cf47a0c51fc98698905db3803b9e902aeeadcadf0425ff19e1e81",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.8-beta3/Godot_v4.8-beta3_linux.x86_32.zip",
+      "version": "4.8-beta3"
+    },
+    "x86_64-linux": {
+      "sha512": "c6dfb51e2d305934345042bedcf19ea8f421b774e601cd11b92cd39112d3f8855ab600a4602d458a5509076b647db1171d23440c365ee3d4fc78111958a77a28",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.8-beta3/Godot_v4.8-beta3_linux.x86_64.zip",
+      "version": "4.8-beta3"
+    }
+  },
   "4.8-dev1": {
     "aarch64-darwin": {
       "sha512": "4a8b5d8f3f149b5c580fd43a1c24d4eb5a1715ebad7a1277b7d77a601ed37a9818a34eae2c240e22c745ac4606bf3660bea8277be657f79205ecba3d88923126",
